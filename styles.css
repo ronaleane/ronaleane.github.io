@@ -1,0 +1,229 @@
+/* resetting page so that bg covers everything */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+body{
+    background-color: rgb(193, 227, 248);
+}
+
+
+
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+
+    /* 7 columns, equal sizes; left section covers 2 while right covers 5 */
+    grid-template-columns: repeat(7, 1fr);
+}
+
+
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #1e3161;
+}
+
+.right-section{
+    grid-column: span 5;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.left-content{
+    padding: 1rem 2rem;
+}
+
+
+
+
+.profile{
+    width: 100%;
+    border-bottom: 1px solid #b3c5f3;
+}
+
+.profile img{
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.name{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+}
+
+.career{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 0.8rem;
+}
+
+.main-title{
+    font-size: 1.5rem;
+    color: rgb(205, 225, 231);
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 3rem;
+}
+
+.contact-info ul{
+    padding: 2rem 0;
+}
+
+.contact-info ul li{
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.contact-info ul li i{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: rgb(198, 243, 243);
+}
+
+
+.right-content{
+    padding: 1rem 5rem;
+}
+
+.skills-section ul li{
+    display: grid;
+    padding-left: 2rem;
+}
+
+.progress-bar{
+    width: 75%;
+    height: 0.4rem;
+    background-color: #8290b4;
+    position: relative;
+    border-radius: 12px;
+}
+
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+}
+
+.html-progress{
+    width: 40%;
+}
+
+.skill-title{
+    text-transform: uppercase;
+    color: #514e57;
+    font-size: 0.8rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.4rem;
+}
+
+.main-title-2{
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 0.7rem;
+    padding-top: 1rem;
+}
+
+.css-progress{
+    width: 20%;
+}
+
+.py-progress{
+    width: 20%;
+}
+
+.word-progress{
+    width: 80%;
+}
+
+.ppt-progress{
+    width: 60%;
+}
+
+
+.about{
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 1.4rem;
+    padding-bottom: 0.7rem;
+}
+
+.about-content{
+    text-indent: 2rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    letter-spacing: 1px;
+    padding-left: 2rem;
+}
+
+.educ{
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+.educ-content{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    letter-spacing: 1px;
+    padding-left: 2rem;
+}
+
+.educ-content-2{
+    text-indent: 2rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    letter-spacing: 1px;
+    padding-left: 2rem;
+}
+
+.ach{
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.ach-content{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    letter-spacing: 1px;
+    padding-left: 2rem;
+}
